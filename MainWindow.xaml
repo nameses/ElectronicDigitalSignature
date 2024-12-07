@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="ElectronicDigitalSignature.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElectronicDigitalSignature"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="ElectronicDigitalSignature">
+
+    <Grid Padding="10">
+        <StackPanel Spacing="10">
+            <TextBlock Text="RSA Digital Signature" FontSize="20" HorizontalAlignment="Center"/>
+
+            <TextBox x:Name="MessageTextBox" PlaceholderText="Enter your message..." />
+
+            <Button x:Name="GenerateKeysButton" Content="Generate Keys" Click="GenerateKeysButton_Click" />
+            <TextBox x:Name="PublicKeyTextBlock" PlaceholderText="Public Key will be shown here..." TextWrapping="Wrap"/>
+
+            <Button x:Name="SignButton" Content="Sign Message" Click="SignButton_Click" />
+            <TextBox x:Name="SignatureTextBlock" PlaceholderText="Signature will be shown here..." TextWrapping="Wrap"/>
+
+            <Button x:Name="VerifyButton" Content="Verify Signature" Click="VerifyButton_Click" />
+            <TextBox x:Name="VerificationTextBlock" PlaceholderText="Verification result will be shown here..."/>
+        </StackPanel>
+    </Grid>
+</Window>

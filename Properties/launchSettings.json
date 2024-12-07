@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ElectronicDigitalSignature (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ElectronicDigitalSignature (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
